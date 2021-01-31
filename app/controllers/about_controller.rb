@@ -1,8 +1,8 @@
 class AboutController < ApplicationController
-
-  def show
+ 
+  def show 
   end
 
-  def author
+  def author 
   end
 end
