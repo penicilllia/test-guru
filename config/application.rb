@@ -1,5 +1,4 @@
 require_relative 'boot'
-
 require 'rails/all'
 
 # Require the gems listed in Gemfile, including any gems
@@ -11,8 +10,7 @@ module TestGuru
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 5.2
     config.time_zone = 'Ekaterinburg'
-    config.i18n.available_locales = [:en, :rus]
-    VERSION = '1.0.0' 
+    config.i18n.available_locales = [:rus]
 
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration can go into files in config/initializers
