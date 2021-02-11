@@ -2,8 +2,8 @@
 
 one:
   name: MyString
-  complete_tests: 1
+  email: MyString
 
 two:
   name: MyString
-  complete_tests: 1
+  email: MyString
