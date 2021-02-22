@@ -1,5 +1,5 @@
 class User < ApplicationRecord
-  def select_user_tests(test_level):
-    user_tests.where(user.id :user_tests.user_id AND test_level :user_tests.test.level)
+  def select_user_tests(test_level)
+    users.where("level = test_level AND user_id = test_id")
   end
 end
