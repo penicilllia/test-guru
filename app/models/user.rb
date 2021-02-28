@@ -1,5 +1,8 @@
 class User < ApplicationRecord
-  def select_user_tests(test_level)
-    users.where("level = test_level AND user_id = test_id")
+
+  has_and_belongs_to_many :tests
+  def tests_level(level)
+    tests.where(level: level)
+    
   end
 end

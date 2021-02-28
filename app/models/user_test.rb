@@ -1,4 +1,4 @@
 class UserTest < ApplicationRecord
-  has_many :users, :class_name => "User"
-  has_many :tests, :class_name => "Test"
+  has_many :users
+  has_many :tests
 end
