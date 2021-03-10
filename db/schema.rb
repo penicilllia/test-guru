@@ -50,15 +50,6 @@ ActiveRecord::Schema.define(version: 2021_02_28_071717) do
     t.index ["user_id", "test_id"], name: "index_tests_users_on_user_id_and_test_id"
   end
 
-  create_table "user_tests", force: :cascade do |t|
-    t.integer "user_id_id"
-    t.integer "test_id_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["test_id_id"], name: "index_user_tests_on_test_id_id"
-    t.index ["user_id_id"], name: "index_user_tests_on_user_id_id"
-  end
-
   create_table "users", force: :cascade do |t|
     t.string "name", null: false
     t.string "email", null: false
